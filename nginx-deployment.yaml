@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:1.14.2
+        image: ubuntuu1.fyre.ibm.com:8443/quayadmin/upgrade-monitor:0.0.1
         ports:
         - containerPort: 80
