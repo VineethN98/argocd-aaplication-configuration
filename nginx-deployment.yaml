@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: isf-upgrade-container
-        image: nginx
+        image: docker.io/grafana/grafana:10.4.3
         ports:
         - containerPort: 80
