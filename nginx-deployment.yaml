@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: isf-upgrade
   labels:
     app: nginx
 spec:
@@ -15,7 +15,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: nginx
-        image: nginx
+      - name: isf-upgrade-container
+        image: ubuntuu1.fyre.ibm.com:8443/quayadmin/upgrade-monitor:0.0.1
         ports:
         - containerPort: 80
